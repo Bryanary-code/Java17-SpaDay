@@ -1,5 +1,6 @@
 body {
     border: solid 10px pink;
+
 }
 
 div {
@@ -23,4 +24,36 @@ table {
             width: 50%;
             padding: 10px;
             text-align: center;
+}
+
+footer {
+height: 125px;
+margin: 15px 0;
+display: flex;
+justify-content: center;
+}
+
+.square {
+height: 100px;
+width: 100px;
+}
+
+.col1 {
+background-color: red;
+}
+
+.col2 {
+background-color: blue;
+}
+
+.col3 {
+background-color: pink;
+}
+
+.col4 {
+background-color: purple
+}
+
+h3 {
+text-align: center;
 }
