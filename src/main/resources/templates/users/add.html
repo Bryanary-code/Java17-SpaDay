@@ -6,18 +6,27 @@
 </head>
 <body>
 <span th:text="${error}"></span>
-<form action = "/user" method="POST">
+<form action = "/user" method="post">
 
     <div class="form-group">
-        <label> Username
-            <input type="text" th:value="${userName}" name="userName" class="form-control">
+        <label>User Name
+            <input th:field="${user.userName}" class="form-control">
         </label>
-        <label> Email
-            <input type="email" th:value="${email}" name="email" class="form-control">
+        <p class="error" th:errors="${user.userName}"></p>
+    </div>
+    <div class="form-group">
+        <label>Email
+            <input th:field="${user.email}" class="form-control">
         </label>
-        <label> Password
-            <input type="password" name="password" class="form-control">
+        <p class="error" th:errors="${user.email}"></p>
+    </div>
+    <div class="form-group">
+        <label>Password
+            <input th:field="${user.password}" class="form-control">
         </label>
+        <p class="error" th:errors="${user.password}"></p>
+    </div>
+    <div>
         <label> Re-type Password
             <input type="password" name="verify" class="form-control">
         </label>
